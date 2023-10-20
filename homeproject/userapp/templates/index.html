@@ -1,0 +1,250 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BlogPod: Home</title>   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{% static '/css/index.css' %}"> 
+        
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+        <!-- <link rel="shortcut icon" href=../static/lucky.jpg" type="static/x-icon"/> -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <link rel="icon" href="../static/sp1.png" type="static/gif" sizes="32x32" >
+        <script src="https://kit.fontawesome.com/137954d1cc.js" crossorigin="anonymous"></script>
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Google+Sans:400,500|Product+Sans:400&lang=en" rel="stylesheet" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    </head>
+<body>
+
+<!-- Notification Alert -->
+<!-- <div class="banner">
+    <p>We are currently working on this website. 
+      Let us know if there is any bug or error.
+    </p>
+</div> -->
+
+
+<!-- Navbar -->
+<main class="main-section">
+    <div class="nav-container is-flex is-width-1300">
+        <img src="{% static '/images/group1.png' %}" width="30px" height="30px">
+        <span class="title">BlogPod</span>
+    </div>
+    {% block content %}
+<!-- Main Section -->
+<div class="flex1-container is-width-1300 is-flex is-justify-between">
+    <div class="flex1 con1">
+        <div class="main-title">
+            <p>we convey your thoughts.
+                
+            </p>
+        </div>
+        <div class="main-subtitle">
+            <h6>BlogPod is a thought sharing platform which helps to
+                spread out thoughts 
+                across the world.<br>
+            </h6>
+            <div class="button-wrapper">
+                <a href="{% url 'signup_view' %}" class="fill-btn is-hover btn5">Create Account</a>
+            </div>
+          
+        </div>
+    </div>
+    <div class="flex12 con1">
+        <img class="is-circle is-pos-abs pos-top-0 " src="{% static '/images/earth.png' %}" alt="earth">
+        <img class="is-circle is-pos-abs pos-left" src="{% static '/images/blog-icon.png' %}" alt="blog">
+        <img class="is-circle is-pos-abs pos-right" src="{% static '/images/podcast-icon.png' %}" alt="podcast"> 
+        <img class="brand-icon is-pos-abs pos-bottom-0" src="{% static '/images/group1.png' %}" alt="blogpod">
+        
+        
+        <!-- <img src="../static/Podcast-bro.png" id="welcome"> -->
+    </div>        
+</div>
+</main>
+
+
+
+
+
+
+
+<!-- Card Container-->
+<div class="container">
+    <div class="flex-container3 is-flex is-justify-evenly">
+        <div class="item3 one">
+            <img class="card-img-size icon-one" src="{% static '/images/upload.png' %}">
+            <svg class="svg-sm" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#75858F" d="M39.1,-21.1C51.1,-1.8,61.6,19.9,54.8,39.6C48,59.3,24,77,0.4,76.8C-23.3,76.6,-46.6,58.5,-50.5,40.5C-54.4,22.4,-38.8,4.5,-27.2,-14.6C-15.5,-33.7,-7.8,-53.9,2.9,-55.6C13.6,-57.2,27.1,-40.4,39.1,-21.1Z" transform="translate(100 100)" />
+              </svg>
+            <h2 class="card-info">Easy to upload</h2>
+        </div>
+        <div class="item3 two">
+            <img class="card-img-size icon-two" src="{% static '/images/share.png' %}">
+            <svg class="svg-sm" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#75858F" d="M39.1,-21.1C51.1,-1.8,61.6,19.9,54.8,39.6C48,59.3,24,77,0.4,76.8C-23.3,76.6,-46.6,58.5,-50.5,40.5C-54.4,22.4,-38.8,4.5,-27.2,-14.6C-15.5,-33.7,-7.8,-53.9,2.9,-55.6C13.6,-57.2,27.1,-40.4,39.1,-21.1Z" transform="translate(100 100)" />
+              </svg>
+            <h2 class="card-info">Share everywhere</h2>
+        </div>
+        <div class="item3 three">
+            <img class="card-img-size icon-three" src="{% static '/images/money.png' %}">
+            <svg class="svg-sm" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#75858F" d="M39.1,-21.1C51.1,-1.8,61.6,19.9,54.8,39.6C48,59.3,24,77,0.4,76.8C-23.3,76.6,-46.6,58.5,-50.5,40.5C-54.4,22.4,-38.8,4.5,-27.2,-14.6C-15.5,-33.7,-7.8,-53.9,2.9,-55.6C13.6,-57.2,27.1,-40.4,39.1,-21.1Z" transform="translate(100 100)" />
+              </svg>
+            <h2 class="card-info">No subscription</h2>
+        </div>
+    </div>
+</div>
+
+
+<section class="outer-section3">
+    <section class="section3 is-flex is-justify-evenly is-width-1300 ">
+        <div class="section3-item1">
+            <img class="side-img" src="{% static '/images/ideas1.png' %}" alt="man-writing">
+        </div>
+        <div class="section3-item2">
+              <p class="section3-title ">Your <span class="color-bottom">ideas</span> is to be shared.</p>
+            
+        </div>
+    </section>
+        
+</section>
+
+
+
+<!-- Blog Cards --> 
+<h1 class="is-center tag-title">Blogs</h1>
+<h4 class="is-center tag-subtitle ">What we like you to do</h4>
+<section class="blog-card-container is-flex is-justify-evenly is-width-1300">
+    <h1 class="is-vertical-text">New way of expressing</h1>
+    <div class="blog-card-item1 blog-card-item1-container is-justify-evenly blog-card-item1 is-flex">
+        <div class="blog-card">
+            <div class="blog-genre">STORY</div>
+            <h1 class="blog-title">This is a new blog about the blogpod.</h1>
+            <div class="card-user-info is-flex ">
+                <img class="blog-card-user-img" src="{% static '/images/lucky1.jpg' %}" alt="user-logo">
+                <div class="card-details">
+                    <h5>John Doe</h5>
+                    <h6 id="is-light">5min read
+                    </h6>
+                </div>
+                
+            </div>
+            
+                
+            
+            
+        </div>
+        <div>
+            <div class="blog-genre">BUSINESS</div>
+            <h1 class="blog-title">This is a new blog about the blogpod.</h1>
+            <div class="card-user-info is-flex ">
+                <img class="blog-card-user-img" src="{% static '/images/lucky1.jpg' %}" alt="user-logo">
+                <div class="card-details">
+                    <h5>Trace O'Brian</h5>
+                    <h6 id="is-light">5min read</h6>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="blog-genre">LIFESTYLE</div>
+            <h1 class="blog-title">This is a new blog about the blogpod.</h1>
+            <div class="card-user-info is-flex ">
+                <img class="blog-card-user-img" src="{% static  'images/lucky1.jpg' %}" alt="user-logo">
+                <div class="card-details">
+                    <h5>Steven Ben</h5>
+                    <h6 id="is-light">5min read</h6>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="blog-genre">TECH</div>
+            <h1 class="blog-title">This is a new blog about the blogpod.</h1>
+            <div class="card-user-info is-flex ">
+                <img class="blog-card-user-img" src="{% static  'images/lucky1.jpg' %}" alt="user-logo">
+                <div class="card-details">
+                    <h5>Lucky</h5>
+                    <h6 id="is-light">5min read &nbsp;<span>7k <img class="thumb-icon" src="{% static '/images/thumb.svg' %}"> </span></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<h1 class="is-center tag-title">Podcast</h1>
+
+<section class="section4-container is-width-1300">
+<div class="section4-item is-flex is-justify-evenly">
+    
+    <div>
+        element1
+    </div>
+    <div>
+        element2
+    </div>
+    <div>
+        element3
+    </div>
+    <div>
+        element4
+    </div>
+    <div>
+        element5
+    </div>
+</div>
+
+</section>
+
+<section class="query-section is-width-1300 is-flex">
+    <h1>Too Error is human.
+        But we don't accept that.
+    </h1>
+    <a class="dark-btn" href="">Submit Query</a>
+</section>
+
+
+<footer>
+    <div class="footer-container is-flex is-justify-between is-width-1300">
+        <div class="footer-brand-title">
+            <h1 class="title">BlogPod</h1>
+            <h5>Thought Sharing Platform</h5>
+        </div>
+    </div>
+    <div class="footer-section2 is-width-1300 is-flex is-justify-between">
+        <div>
+            <a href="">Privacy terms</a>
+            <a href="">Security</a>
+        </div>
+        <div>
+            <a href="">About us</a>
+            <a href="">Feedback</a>
+        </div>
+        <div>
+            <a href="">FAQ</a>
+            <a href="">why BlogPod?</a>
+            <a href="">complaint</a>
+        </div>
+    </div>
+    
+
+</footer>
+
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+
+{% endblock %}
+</body>
+</html>

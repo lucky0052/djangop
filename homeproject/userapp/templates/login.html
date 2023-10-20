@@ -1,0 +1,21 @@
+{% extends 'signup.html' %}
+{% block form %}
+<form method="post">
+    {% csrf_token %}
+    <div class="form-floating mb-3 ">
+        <input type="email" class="form-control" id="floatingemail" placeholder="" name="loginemail">
+        <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="floatingpassword" placeholder="" name="loginpassword">
+        <label for="floatingInput">Password</label>
+    </div>
+    <div class="form-floating mb-3">
+        <p class="para-font text-none">Need an account? <a href="{% url 'signup_view' %}">Sign up</a> </p>
+      </div>
+    <div class="col-auto mb-3">
+        <input type="submit" class="btn btn-primary " value="Login">
+    </div>
+</form>
+
+{% endblock %}
